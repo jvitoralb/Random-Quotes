@@ -1,0 +1,78 @@
+@use './partials/default' as *;
+@use './partials/mixins' as *;
+
+body {
+    background-color: $default-color;
+}
+
+.main {
+    @include flexCenter(column);
+    height: 100vh;
+}
+
+.bg {
+    @include transitions(0.15s);
+}
+
+.quote-box {
+    @include shadow(2px, 6px, 10px);
+    background-color: $prim-color;
+    width: 460px;
+    padding: 10px;
+
+    h4 {
+        padding: 20px 15px 0;
+        font-style: italic;
+    }
+    p {
+        font-weight: 300;
+        text-align: end;
+        padding: 20px;
+    }
+    @include mobile {
+        width:360px;
+    }
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        @include mainButtons;
+        &:hover {
+            color: $twitter;
+            background-color: opacify($color: $prim-color, $amount: 0.5);
+            box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.65);
+        }
+    }
+    .new-quote {
+        @include mainButtons;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+.credit {
+    text-align: end;
+    width: 460px;
+    @include mobile {
+        width:360px;
+    }
+}
+
+.socials {
+    @include flexCenter(row);
+    justify-content: space-around;
+    color: $sec-color;
+    width: 80%;
+    margin-top: 8%;
+
+    & i:hover {
+        @include transitions(0.25s);
+        color: $prim-color;
+        transform: scale(1.08);
+    }
+}

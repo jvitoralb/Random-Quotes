@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: rgb(106, 230, 235);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.bg {
+  transition: all 0.15s ease-in;
+}
+
+.quote-box {
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.65);
+  background-color: rgb(230, 243, 255);
+  width: 460px;
+  padding: 10px;
+}
+.quote-box h4 {
+  padding: 20px 15px 0;
+  font-style: italic;
+}
+.quote-box p {
+  font-weight: 300;
+  text-align: end;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .quote-box {
+    width: 360px;
+  }
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons a {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+  background-color: rgb(106, 230, 235);
+  color: rgb(22, 30, 85);
+  padding: 8px;
+  border-radius: 3px;
+}
+.buttons a:hover {
+  color: rgb(29, 161, 242);
+  background-color: #e6f3ff;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.65);
+}
+.buttons .new-quote {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.65);
+  background-color: rgb(106, 230, 235);
+  color: rgb(22, 30, 85);
+  padding: 8px;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.credit {
+  text-align: end;
+  width: 460px;
+}
+@media (max-width: 500px) {
+  .credit {
+    width: 360px;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(22, 30, 85);
+  width: 80%;
+  margin-top: 8%;
+}
+.socials i:hover {
+  transition: all 0.25s ease-in;
+  color: rgb(230, 243, 255);
+  transform: scale(1.08);
+}/*# sourceMappingURL=style.css.map */
