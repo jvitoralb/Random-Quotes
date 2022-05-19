@@ -1,4 +1,4 @@
-import { quotesBank } from "./quotesBank.js";
+import { quotesBank } from './quotesBank.js';
 
 const colors = [
     '#87A9FF',
